@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>navbars</title>
+    <style>
+        nav .badge {
+            position: relative;
+            top:0px;
+            right:20px;
+        }
+        /* img{
+            height: 200 px;
+            width: 150px;
+        } */
+    </style>
+</head>
+<body>
+ <nav class="nav-wraper blue lighten-1 "> 
+ <div class="container">
+         <a href="#"class="brand-logo"> BANJARA </a>
+         
+     <a href="#" class="sidenav-trigger" data-target="mobile-view">
+        <i class="material-icons">menu</i>
+    </a>
+     <ul class="right hide-on-med-and-down">
+         <li> <a href="#"> About  </a></li>
+         <li> <a href="#"> Home </a> </li>
+         <li> <a href="#"> Contact </a> </li>
+         <li> <a href="#" class="btn-floating z-depth-3 pink lighten-3 white-text"><i class="material-icons"> notifications </i> </a>
+          <span class="badge new pink  lighten-2"> 5  </span>
+        </ul>
+</div>
+
+ </nav>   
+
+ <ul class="sidenav zeus" id="mobile-view">
+    <li> <a href="#"> About  </a></li>
+    <li> <a href="#"> Home </a> </li>
+    <li> <a href="#"> Contact </a> </li>
+ </ul>
+
+ <div class="container">
+     <div class="row">
+      <h2> cards </h2>
+      <div class="col s12 l6">
+          <div class="card">
+          
+              <div class="card-image">
+                  <img src="imgs/DSC00456.JPG" alt="">
+                  <a href="#" class="btn-floating pulse halfway-fab">
+                    <i class="material-icons pulse">favorite</i>
+                </a>
+            </div>
+             
+            <div class="card-content">
+              <span class="card-title center"> Summer Collection</span>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic recusandae tempora quae nisi enim mollitia tenetur porro ipsum nobis ipsam, est, fugit voluptates exercitationem sunt veniam. Eligendi earum ratione quis?</p>
+            </div>
+        <div class="card-action">
+                <a href="#"> more options</a>
+                <a href="#"> other colors</a>
+            </div>
+
+          </div>
+      </div>
+      <div class="col s12 l4">
+        <div class="card">
+        
+            <div class="card-image">
+                <img src="imgs/DSC00461.JPG" alt="">
+                <a href="#" class="btn-floating pulse halfway-fab">
+                  <i class="material-icons pulse">favorite</i>
+              </a>
+          </div>
+           
+          <div class="card-content">
+            <span class="card-title center"> Winter Collection</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic recusandae tempora quae nisi enim mollitia tenetur porro ipsum nobis ipsam, est, fugit voluptates exercitationem sunt veniam. Eligendi earum ratione quis?</p>
+          </div>
+      <div class="card-action">
+              <a href="#"> more options</a>
+              <a href="#"> other colors</a>
+          </div>
+
+        </div>
+    </div>
+
+     </div>
+ </div>
+
+ <div class="container">
+   <h1> Collection </h1>
+   <div class="collection with-header">
+       <div class="collection-header"><h2> staffs </h2></div>
+       <div class="collection-item ">
+           <i class="material-icons circle blue">person</i>
+           <i class="material-icons circle blue">person</i>
+           <span class="title"> Zeus </span>
+           <p class="grey-text">boss</p>
+           <a href="#" class="secondary-content">
+               <i class="material-icons">email</i>
+           </a>
+       </div>
+       <div class="collection-item avatar">
+           <i class="material-icons circle blue">person</i>
+           <span class="title"> zigmocat </span>
+           <p class="grey-text">secy</p>
+           <a href="#" class="secondary-content">
+               <i class="material-icons">email</i>
+           </a>
+       </div>
+       <div class="collection-item avatar">
+           <i class="material-icons circle blue">person</i>
+           <span class="title"> harsh </span>
+           <p class="grey-text">employ</p>
+           <a href="#" class="secondary-content">
+               <i class="material-icons">email</i>
+           </a>
+       </div>
+       <div class="collection-item avatar">
+           <i class="material-icons circle blue">person</i>
+           <span class="title"> ambig </span>
+           <p class="grey-text"> son</p>
+           <a href="#" class="secondary-content">
+               <i class="material-icons">email</i>
+           </a>
+       </div>
+       
+   </div>
+   </with-header>
+ </div>
+
+ <div class="container">
+     <a href="#terms" class="btn grey modal-trigger">Terms and conditions</a>
+     <div class="modal" id="terms">
+         <div class="modal-content">
+             <div class="modal-title">
+                 <h2>terms and conditions</h2>
+                  <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus animi deserunt a, tenetur quod voluptatibus qui distinctio, dolorum reprehenderit voluptatum voluptas laborum maxime? Dolore nisi quia vitae cum, nemo vero?</p>
+                </div>
+         </div>
+         <div class="modal-footer ">
+             <a class="btn modal-close">accept and close </a>
+
+             </div>
+     </div>
+ </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.zeus').sidenav();
+         });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+         });
+    </script>
+</body>
+</html>

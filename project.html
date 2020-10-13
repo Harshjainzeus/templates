@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Photo Ninja</title>
+  <style>
+      header{
+          background: url(imgs/DSC00942.JPG);
+           min-height: 1000px;
+          background-size: cover;
+          background-position: center;
+
+      }
+      @media screen and (max-width:650px){
+          header{
+              min-height : 500px;
+          }
+      }
+      .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+      }
+      /* .tabs .tab a:hover, .tabs .tab a.active{
+          background: transparent;
+      } */
+      .tabs .indicator{
+          background-color: blue;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color:transparent;
+    outline: none;
+}
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+<header>
+    <nav class="nav-wraper grey lighten-2 ">
+        <div class="container">
+            <a href="" class="sidenav-trigger" data-target="mobileview"><i class="material-icons">menu</i></a>
+            <a href="" class="brand-logo"> BANJARA</a>
+            <ul class="right black-text hide-on-med-and-down">
+                <li><a href="#photos">pics </a></li>
+                <li><a href="#contact">Contacts </a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#" class="tooltippe btn-floating indigo" data-tooltip="insta"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo" data-tooltip="fb"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="tooltipped btn-floating indigo" data-tooltip="twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <ul class="sidenav grey" id="mobileview">
+                <li><a href="#">Home </a></li>
+                <li><a href="#">Contacts </a></li>
+                <li><a href="#">About </a></li>
+              </ul>
+        
+        </div>
+
+    </nav>
+
+</header>
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+      <div class="row">
+          <div class="col s12 l4">
+              <img src="imgs/DSC00511.JPG" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1" >
+              <h2> Red Orlets</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint culpa deleniti veniam. Unde aspernatur quis aliquid, perferendis, consequuntur nesciunt dignissimos fuga, aperiam et tempore soluta perspiciatis consequatur facere obcaecati quidem.</p>
+          </div>
+      </div>
+
+        <div class="row ">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="imgs/DSC00461.JPG" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align " >
+                <h2 class="indigo-text text-darken-4"> Family </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint culpa deleniti veniam. Unde aspernatur quis aliquid, perferendis, consequuntur nesciunt dignissimos fuga, aperiam et tempore soluta perspiciatis consequatur facere obcaecati quidem.</p>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col s12 l4 materialboxed">
+                <img src="imgs/DSC00499.JPG" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l6 offset-l1" >
+                <h2 class="red-text text-darken-4"> Nature</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint culpa deleniti veniam. Unde aspernatur quis aliquid, perferendis, consequuntur nesciunt dignissimos fuga, aperiam et tempore soluta perspiciatis consequatur facere obcaecati quidem.</p>
+            </div>
+        </div>
+      </section>
+  <!-- parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="imgs/DSC00535.JPG" alt="" class="responsive-img">
+            </div>
+        </div>
+
+  <!-- services / tabs -->
+  <section class="container section" id="services">
+     <div class="row">
+         <div class="col s12 l4">
+             <h2 class="purple-text text-darken-3">what i m ..</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quod temporibus ex vero repellendus esse quos aspernatur modi numquam delectus. Quas repudiandae deleniti aperiam voluptate illum quo sequi culpa soluta.</p>
+             <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, tenetur eos? Suscipit culpa quae soluta voluptas alias quos non consectetur sunt animi mollitia voluptates dolorum perferendis ut, pariatur sit nihil.</p>    -->
+         </div>
+         <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="col s6 tab"><a href="#summer" class="indigo-text"> SUMMER  </a></li>
+                <li class="col s6 tab"><a href="#winter" class="indigo-text"> WINTER  </a></li>
+            </ul>
+            <div class="col s12" id="summer">
+             <p class="red-text flow-text">SUMMER</h4>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente rem illum natus cumque, accusamus magnam odit temporibus neque fugit, amet, repellat nisi. Dicta reiciendis nam, provident sit ullam consequatur.</p>
+            </div>
+            <div class="col s12" id="winter">
+             <p class="red-text flow-text">WINTER</h4>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente rem illum natus cumque, accusamus magnam odit temporibus neque fugit, amet, repellat nisi. Dicta reiciendis nam, provident sit ullam consequatur.</p>
+            </div>
+         </div>
+     </div>
+    </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="imgs/DSC00619.JPG" alt="" class="responsive-img">
+    </div>
+</div>
+  <!-- contact form -->
+
+  <section class="section container">
+    <div class="row">
+        <div class="col s12 l5">
+            <h3 class="purple-text"> what else we do </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tenetur odio placeat dolorum unde, est et aperiam sit, dolorem aliquid quidem quas repellendus sapiente asperiores. Non reiciendis voluptatibus fugiat harum.</p>
+        </div>
+        <div class="col s12 l5 offset-l2 scrollspy" id="contact">
+          <form action="">
+              <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                <input type="email" id="email">
+                <label for="email"> type your email</label>
+              </div>
+              <div class="input-field">
+                  <i class="material-icons prefix">message</i>
+                <textarea  id="textarea" class="materialize-textarea"></textarea>
+                <label for="textarea"> type your messsage</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="date" class="datepicker">
+                <label for="date"> choose a dilevary date..</label>
+              </div>
+              <div class="input-field">
+                  <p>length required..</p>
+                  <p>
+                  <label>
+                      <input type="checkbox">
+                      <span>2.8</span>
+                  </label>
+                  </p>
+                  <p>
+                  <label>
+                      <input type="checkbox">
+                      <span>1.8</span>
+                  </label>
+                  </p>
+              </div>
+              <div class="input-field center">
+                  <div class="btn">submit</div>
+              </div>
+          </form>
+
+        </div>
+    </div>
+
+  </section>
+
+  <!-- footer -->
+  <footer class="grey darken-2">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 l6 scrollspy " id="about">
+                  <h3>About Me</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel esse ut natus nemo, laudantium temporibus amet excepturi voluptas accusantium architecto consequatur tenetur tempore voluptates maiores repudiandae assumenda sequi? Reiciendis, harum!</p>
+              </div>
+              <div class="col s12 l4 offset-l2">
+                  <h3>Connect</h3>
+                  <ul>
+                      <li><a href="#" class="grey-text">Facebook</a></li>
+                      <li><a href="#" class="grey-text">Twitter</a></li>
+                      <li><a href="#" class="grey-text">Instagram</a></li>
+                   
+                  </ul>
+              </div>
+          </div>
+      </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container text-lighten-5 center-align">&copy estd 1998</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker(
+            {
+        disableWeekends :true
+            }
+        );
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
